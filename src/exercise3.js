@@ -5,14 +5,13 @@ exports.run = function(input) {
   
   input.forEach(function (item){
   	if (item.operator=='add'){
-  		res.push('+');
+  		res += '+';
   	}
   	if (item.operator=='substract'){
-  		res.push('-');
+  		res += '-' ;
   	}
-  	res.push(item.value);
+  	res += item.value;
   })
-
-  parseInt(res);
+  res = Math(res);
   return res;
 };
